@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "reif": {
+      "type": "http",
+      "url": "https://reifweb-production.up.railway.app/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${REIF_API_TOKEN}"
+      }
+    }
+  }
+}

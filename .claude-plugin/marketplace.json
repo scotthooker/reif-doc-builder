@@ -1,0 +1,13 @@
+{
+  "name": "reif",
+  "owner": {
+    "name": "REIF"
+  },
+  "plugins": [
+    {
+      "name": "reif-doc-builder",
+      "source": "./reif-doc-builder",
+      "description": "Build and review REIF property brochures from Claude, over the REIF remote MCP server."
+    }
+  ]
+}

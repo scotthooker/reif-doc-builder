@@ -1,0 +1,24 @@
+{
+  "name": "reif-doc-builder",
+  "version": "1.0.0",
+  "description": "Drive the REIF brochure platform from Claude \u2014 turn a builder pack PDF into a property brochure, sales presentation and highlights sheet.",
+  "author": {
+    "name": "REIF"
+  },
+  "homepage": "https://reifweb-production.up.railway.app/llms.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scotthooker/reif-doc-builder.git"
+  },
+  "keywords": [
+    "reif",
+    "real-estate",
+    "brochure",
+    "pdf",
+    "mcp"
+  ],
+  "commands": [
+    "./commands"
+  ],
+  "mcpServers": "./.mcp.json"
+}
