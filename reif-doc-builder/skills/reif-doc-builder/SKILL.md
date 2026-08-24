@@ -17,7 +17,7 @@ the platform any other way (the HTTP routes assume browser session cookies and
 will reject you).
 
 Connection details, including the endpoint and how to get a token, are at
-`https://reifweb-production.up.railway.app/llms.txt`. Tokens are minted by an
+`https://packbuilder.reif.com.au/llms.txt`. Tokens are minted by an
 admin at `/admin/api-tokens` and shown only once. Setup is in
 [references/setup.md](references/setup.md).
 
@@ -93,6 +93,28 @@ source content, and fix rather than regenerate.
 For prose sections, match the tone already in the document. Australian real
 estate context throughout: AUD prices, Australian addresses, drive times
 against local CBDs.
+
+## Configuring the platform
+
+Building brochures is one lane; **configuring** the platform is the other, and
+it needs an **admin** token. If a configuration tool says your token is not
+admin, that is the answer — relay it, don't work around it.
+
+Configuration covers builder configs (which sections a brochure has and in
+what order), per-section layout, reusable section variants, PDF themes, and
+enrichment prompts. Read
+[references/configuration.md](references/configuration.md) before changing a
+builder, and [references/layouts.md](references/layouts.md) before changing
+anything about how a section looks.
+
+Three rules, always:
+
+1. **Read before you write.** `get_builder_config` first, every time.
+2. **State the change as a diff and get agreement.** A config change applies to
+   every brochure generated from that builder from then on.
+3. **Say what is now live.** Some writes take effect immediately; a theme
+   `update` only edits a draft until you publish it. Never leave the user
+   guessing which happened.
 
 ## When something goes wrong
 

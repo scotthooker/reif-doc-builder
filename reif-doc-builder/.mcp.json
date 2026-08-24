@@ -2,7 +2,7 @@
   "mcpServers": {
     "reif": {
       "type": "http",
-      "url": "https://reifweb-production.up.railway.app/api/mcp",
+      "url": "https://packbuilder.reif.com.au/api/mcp",
       "headers": {
         "Authorization": "Bearer ${REIF_API_TOKEN}"
       }

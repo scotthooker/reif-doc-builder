@@ -4,7 +4,7 @@ The platform is reached over its **remote MCP server**. There is no other
 supported route: the ordinary HTTP routes authenticate from browser session
 cookies, so an agent calling them directly gets rejected.
 
-Endpoint: `https://reifweb-production.up.railway.app/api/mcp`
+Endpoint: `https://packbuilder.reif.com.au/api/mcp`
 
 ## Getting a token
 
@@ -45,7 +45,7 @@ Add to `.mcp.json` in the project root:
   "mcpServers": {
     "reif": {
       "type": "http",
-      "url": "https://reifweb-production.up.railway.app/api/mcp",
+      "url": "https://packbuilder.reif.com.au/api/mcp",
       "headers": { "Authorization": "Bearer ${REIF_API_TOKEN}" }
     }
   }

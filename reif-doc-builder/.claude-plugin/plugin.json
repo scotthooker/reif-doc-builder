@@ -5,7 +5,7 @@
   "author": {
     "name": "REIF"
   },
-  "homepage": "https://reifweb-production.up.railway.app/llms.txt",
+  "homepage": "https://packbuilder.reif.com.au/llms.txt",
   "repository": {
     "type": "git",
     "url": "https://github.com/scotthooker/reif-doc-builder.git"
